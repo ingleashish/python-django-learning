@@ -1,0 +1,32 @@
+Create virtual python env using below command
+cmd conda create -n mydjangoenv python=3.4
+
+Then activate that env using
+cmd source activate mydjangoenv
+
+Then Install django latest version
+cmd conda install django
+
+check which env active
+cmd conda info --envs
+
+create first django project using command below
+cmd django-admin startproject first_project
+
+run server
+cmd python manage.py runserver
+
+create first django app
+cmd python manage.py startapp app_name{first_app}
+
+
+after creating models run migrate command
+python manage.py migrate
+
+register the changes to your application after migrations
+python manage.py makemigrations app_name{first_app} and re-run python manage.py migrate
+
+register those models in your app admin.py
+
+create super user to access db through models using
+python manage.py createsuperuser
